@@ -1,0 +1,39 @@
+Spots Version 1 Features:
+
+
+Emitter
+  - omni
+  - directional
+  - guided
+
+
+Fields
+  - gravity
+  - air
+  - turbulance
+  - vortex
+
+
+Particle
+  - type
+	shape (circle, square, star, variable length line)
+	mc or bitmap (anything in library)
+  - spawn rate
+  - spawn rate randomness
+  - size or size array
+  - size randomnness
+  - color or color array
+  - color randomness
+  - orient to path
+
+
+
+Spots Version 2 Features:
+
+- 3d support
+
+Spots Version 3 Features:
+
+Gizmos
+  - deflectors
+  - area effectors
