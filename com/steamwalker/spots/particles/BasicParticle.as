@@ -1,11 +1,13 @@
-﻿package com.steamwalker.spots {
+﻿package com.steamwalker.spots.particles {
+	import flash.display.Bitmap;
+	import flash.display.BitmapData;
 	import flash.display.Sprite;
 	import flash.geom.Point;
-	import flash.display.*;
 
 	//class
-	public class Particle extends Sprite{
+	public class BasicParticle extends Sprite{
 		private var _spawnTime:Number;
+		private var _id:Number;
 		private var _vars:Object;
 		private var _refreshRate:Number;
 		private var _origin:Point;
@@ -17,22 +19,28 @@
 		private var _currentSpeed:Number;
 		private var _progress:Number;
 		private var _angle:Number;
-		private var _vx:Number;
-		private var _vy:Number;
-		private var _vz:Number;
+		
+		//dynamic trackers
+		private var _oldPosition:Array;	
+		private var _oldRotation:Number;
+		private var _vector:Array;
+		private var _rotation:Number;
 
 		//for guided
 		private var _destination:Point;
 		
 		//
 		//constructor
-		public function Particle($vars:Object, $spawnTime:Number){
-			//set defaults
-			_spawnTime = $spawnTime;
+		public function BasicParticle($vars:Object, $id:Number, $spawnTime:Number){
+			_spawnTime = $spawnTime;	
+			_id = $id;
 			_vars = $vars;
 			_refreshRate = $vars.refreshRate;
 			
-			config();
+			//trackers
+			_vector = [null, null, null];
+			
+			config(); 
 		}
 		
 		//
@@ -43,7 +51,11 @@
 			y = _vars.origin.y;
 			_lifespan = _vars.lifespan;
 			//alpha = _vars.opacity;
-
+			
+			//set trackers
+			_oldPosition = [x,y,z];	
+			_oldRotation = rotation;
+			
 			//speed
 			_startingSpeed = _vars.startingSpeed;
 			if(_vars._speedRandom) _startingSpeed = (_startingSpeed - ((_vars._speedRandom * _startingSpeed) / 2)) + ((_vars.speedRandom * _startingSpeed) * Math.random());
@@ -66,19 +78,45 @@
 			color = Number(_vars.opacity * 255).toString(16) + color.toString(16);
 			
 			//draw
-			var bitmapData = new BitmapData(size,size,true, parseInt(color, 16));
-			var bitmap:Bitmap = new Bitmap(bitmapData);
-			addChild(bitmap); 
-			//var shape:Sprite  = new Sprite;
-			//graphics.beginFill(color);
-//			graphics.drawCircle(0, 0, size);
-//			graphics.endFill();
+			//var bitmapData = new BitmapData(size,size,true, parseInt(color, 16));
+			//var bitmap:Bitmap = new Bitmap(bitmapData);
+			//addChild(bitmap); 
+			var shape:Sprite  = new Sprite;
+			graphics.beginFill(color);
+			graphics.drawCircle(0, 0, size);
+			graphics.endFill();
+			addChild(shape);
 			//bitmapData.draw(shape);
-			//cacheAsBitmap = true;
+			cacheAsBitmap = true;
 		}
-		public function increment(_currentTime):void{
-			_progress = (_currentTime - _spawnTime) / (_lifespan * 1000);
-			_life = _currentTime - _spawnTime;
+		public function increment($currentTime):void {
+			//calculate vector
+			_vector[0] = x - _oldPosition[0];
+			_vector[1] = y - _oldPosition[1];
+			_vector[2] = z - _oldPosition[2];
+			_oldPosition = [x,y,z];
+			
+			//air drag
+			_vector[0] *= .98;
+			_vector[1] *= .98;
+			_vector[2] *= .98;
+			
+			if(y > 766){ _vector[1] = -_vector[1]; } 
+			
+			//update
+			x += _vector[0];
+			y += _vector[1];
+			z += _vector[2];
+			
+			//other stuffs
+			_progress = ($currentTime - _spawnTime) / (_lifespan * 1000);
+			_life = $currentTime - _spawnTime;
+		}
+		public function update($update):void {
+			//set position
+			x += $update.vector[0];
+			y += $update.vector[1];
+			z += $update.vector[2];
 		}
 		
 		//
@@ -92,6 +130,7 @@
 		public function get life():Number{return _life;}						//GET life
 		public function get progress():Number{return _progress;}				//GET process
 		public function get currentSpeed():Number{return _currentSpeed;}		//GET currentSpeed
+		public function get vector():Array{return _vector;}						//GET vector
 		//for guided
 		public function get destination():Point{return _destination}
 		public function set destination(destination:Point){_destination = destination}

@@ -5,8 +5,9 @@
 	import flash.utils.*;
 	import flash.geom.*;
 	//
-	import com.steamwalker.spots.*;
-	import com.steamwalker.spots.emitter.*;
+	import com.steamwalker.spots.particles.*;
+	import com.steamwalker.spots.emitters.*;
+	import com.steamwalker.spots.fields.*;
 	//class
 	public class Spots extends MovieClip {
 		//data
@@ -18,6 +19,8 @@
 		private var _type:String;
 		private var _refreshRate:Number;
 		private var _active = false;
+		
+		//
 		//constructor
 		public function Spots(type:String, vars:Object):void{
 			_type = type;
@@ -33,9 +36,9 @@
 				case "omni":
 					_emitter = new Omni(_vars);
 					break;
-				/*case "directional":
-					_emitter = new Directional(_vars, stage.stageWidth, stage.stageHeight);
-					break;*/
+				case "directional":
+					//_emitter = new Directional(_vars, stage.stageWidth, stage.stageHeight);
+					break;
 				case "guided":
 					//_emitter = new Guided(_vars);
 					break;
@@ -43,6 +46,7 @@
 			addChild(_emitter);
 			addEventListener(Event.ENTER_FRAME, onEnterFrame);
 		}
+		
 		//
 		//inits
 		public static function omni(vars:Object):Spots{
@@ -54,6 +58,7 @@
 		public static function guided(vars:Object):Spots{
 			return new Spots("guided", vars);
 		}
+		
 		//
 		//emitter control
 		public function startEmitter(){
@@ -65,12 +70,14 @@
 		public function pauseEmitter(){
 			removeEventListener(Event.ENTER_FRAME, onEnterFrame);
 		}
+		
 		//
 		//emitter animation
 		private function onEnterFrame(e:Event){
 			if(_active) _emitter.spawnParticle();
 			_emitter.updateParticles();
 		}
+		
 		//
 		//set new parameter
 		public function updateVariable($key:String, value:*){
@@ -83,8 +90,9 @@
 				if($key == key) _vars.fields[key] = value;
 			}
 		}
+		
 		//
-		//get and set
+		//getter and setter
 		public function get particleCount():Number {return _emitter.particleCount; }
 	}
 }

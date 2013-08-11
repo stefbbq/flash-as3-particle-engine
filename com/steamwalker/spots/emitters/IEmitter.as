@@ -1,0 +1,1 @@
+﻿package com.steamwalker.spots.emitters{	import com.steamwalker.spots.*;	import com.steamwalker.spots.particles.*;		public interface IEmitter{		function spawnParticle();		function updateParticles();		//get and set		function get particles():Vector.<BasicParticle>;	}}
