@@ -1,0 +1,29 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Scroller._number._field" itemID="4d59995e-00000215" lastModified="1297839570">
+  <timeline>
+    <DOMTimeline name="Scroller._number._field">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="_field" selected="true" fontRenderingMode="standard" width="12" height="50.9" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="-7" ty="-7"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>&lt;&gt;&#xD;</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineSpacing="-0.2" size="14" bitmapSize="280" face="Calibri-Bold" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,34 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="circle" itemID="5207ac2f-000001ae" lastModified="1376234543">
+  <timeline>
+    <DOMTimeline name="circle">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F80FF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!73 427S2[0 354 0 250!0 250[0 146 73 73!73 73[146 0 250 0!250 0[354 0 427 73!427 73[500 146 500 250!500 250[500 354 427 427!427 427[354 500 250 500!250 500[146 500 73 427"/>
+                    <Edge cubics="!250 0(250,0;319,0 378,24 427,73q250 0Q354 0q427 73);"/>
+                    <Edge cubics="!427 427(;378,476 319,500 250,500q427 427Q354 500q250 500);"/>
+                    <Edge cubics="!500 250(;500,319 476,378 427,427q500 250Q500 354q427 427)427,427;"/>
+                    <Edge cubics="!427 73(;476,122 500,181 500,250q427 73Q500 146q500 250)500,250;"/>
+                    <Edge cubics="!73 427(73,427;24,378 0,319 0,250q73 427Q0 354q0 250);"/>
+                    <Edge cubics="!0 250(0,250;0,181 24,122 73,73q0 250Q0 146q73 73);"/>
+                    <Edge cubics="!73 73(73,73;122,24 181,0 250,0q73 73Q146 0q250 0)250,0;"/>
+                    <Edge cubics="!250 500(;181,500 122,476 73,427q250 500Q146 500q73 427);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

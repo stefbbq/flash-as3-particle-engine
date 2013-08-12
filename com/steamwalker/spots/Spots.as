@@ -94,5 +94,6 @@
 		//
 		//getter and setter
 		public function get particleCount():Number {return _emitter.particleCount; }
+		public function get particlePoolCount():Number {return _emitter.particlePoolCount; }
 	}
 }

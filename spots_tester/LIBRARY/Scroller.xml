@@ -1,0 +1,55 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Scroller" itemID="4d599088-00000203" linkageExportForAS="true" linkageClassName="com.steamwalker.Scroller" lastModified="1297840439" lastUniqueIdentifier="1">
+  <timeline>
+    <DOMTimeline name="Scroller">
+      <layers>
+        <DOMLayer name="Layer 2" color="#9933CC" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Scroller._thumb" name="_thumb" selected="true" centerPoint3DX="2" centerPoint3DY="8">
+                  <transformationPoint>
+                    <Point x="2" y="8"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 1" color="#4FFF4F">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Scroller._rail" name="_rail" centerPoint3DX="67" centerPoint3DY="4">
+                  <transformationPoint>
+                    <Point x="67" y="4"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMDynamicText name="_fTitle" width="120" height="19.55" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="-57" ty="-24"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>&lt;&gt;</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineSpacing="-0.2" size="16" bitmapSize="320" face="Calibri" fillColor="#FFA95B"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+                <DOMSymbolInstance libraryItemName="Scroller._number._field" name="_number" centerPoint3DX="8" centerPoint3DY="23">
+                  <matrix>
+                    <Matrix ty="15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="8" y="8"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

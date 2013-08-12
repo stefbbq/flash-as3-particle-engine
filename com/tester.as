@@ -42,11 +42,11 @@
 			gravObject.addEventListener(MouseEvent.MOUSE_UP, onGravMouseUp);
 		}
 		public function configSpots(){
-			//_fields = {turbulance: 1, gravity: .5, gravityDestination: .5, gravityDestinationPosition: [gravObject.x, gravObject.y]};
+			_fields = {turbulance: 1, gravity: .5, gravityDestination: .5, gravityDestinationPosition: [gravObject.x, gravObject.y]};
 			//_fields = {gravityDestination: .5, gravityDestinationPosition: [gravObject.x, gravObject.y]};
-			_fields = {gravity: .5};
+			//_fields = {gravity: .5};
 			//var fields = {gravity:9};
-			_spotsObject = Spots.omni({origin: new Point(0,0), rate: .001, lifespan: 30, startSpeed: 1, speedRandom: 2, color:0xeebbdd, colorRandom: 0.00001, size:4, sizeRandom: .1, opacity: .5, fade: true, fields:_fields});
+			_spotsObject = Spots.omni({origin: new Point(0,0), rate: .1, lifespan: 2, startSpeed: 1, speedRandom: 2, color:0xeebbdd, colorRandom: 0.00001, size:4, sizeRandom: .1, opacity: .5, fade: true, fields:_fields});
 			//_spotsObject = Spots.directional({speed: 50, origin: new Point(0,0), angle: 90});
 			//_spotsObject = Spots.guided({speed: 20, origin: new Point(100,100), destination: new Point(300,300)});
 			addChild(_spotsObject);
@@ -121,6 +121,7 @@
 			_spotsObject.updateVariable("origin", new Point(emitterObject.x, emitterObject.y));
 			_spotsObject.updateFields("gravityDestinationPosition", [gravObject.x, gravObject.y]);
 			tParticles.text = "particles: " + _spotsObject.particleCount.toString();
+			tParticlePool.text = "particlePool: " + _spotsObject.particlePoolCount.toString();
 		}
 		private function onTextEnter(e:KeyboardEvent){
 			var target = e.currentTarget;

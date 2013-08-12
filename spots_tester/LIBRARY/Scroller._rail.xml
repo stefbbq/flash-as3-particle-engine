@@ -1,0 +1,40 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Scroller._rail" itemID="4d5991fc-00000206" lastModified="1297835252">
+  <timeline>
+    <DOMTimeline name="Scroller._rail">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <LinearGradient>
+                        <matrix>
+                          <Matrix a="0.0732269287109375" d="0.003662109375"/>
+                        </matrix>
+                        <GradientEntry color="#FFFFFF" alpha="0.698039215686274" ratio="0.00392156862745098"/>
+                        <GradientEntry color="#FFFFFF" ratio="0.525490196078431"/>
+                        <GradientEntry color="#FFFFFF" alpha="0.698039215686274" ratio="1"/>
+                      </LinearGradient>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!1182 -43S2[1200 -26 1200 1!1200 1[1200 29 1182 44!1182 44[1165 60 1139 60!1139 60/-1144 60!-1144 60[-1170 60 -1184 43!-1184 43[-1200 28 -1200 1!-1200 1[-1200 -25 -1184 -42!-1184 -42[-1169 -60 -1144 -60!-1144 -60/1139 -60!1139 -60[1165
+ -60 1182 -43"/>
+                    <Edge cubics="!1339 70(;1374,70 1400,48 1400,11q1339 70Q1365 70q1382 54Q1400 39q1400 11);"/>
+                    <Edge cubics="!-1000 11(;-1000,46 -978,70 -944,70q-1000 11Q-1000 38q-984 53Q-970 70q-944 70);"/>
+                    <Edge cubics="!-944 70(;-944,70 1339,70 1339,70q-944 70 1339 70);"/>
+                    <Edge cubics="!1339 -50(;1339,-50 -944,-50 -944,-50q1339 -50 -944 -50);"/>
+                    <Edge cubics="!1339 -50(;1374,-50 1400,-26 1400,11q1339 -50Q1365 -50q1382 -33Q1400 -16q1400 11);"/>
+                    <Edge cubics="!-944 -50(;-978,-50 -1000,-24 -1000,11q-944 -50Q-969 -50q-984 -32Q-1000 -15q-1000 11);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

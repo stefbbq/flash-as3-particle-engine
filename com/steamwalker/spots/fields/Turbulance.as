@@ -4,7 +4,7 @@ package com.steamwalker.spots.fields {
 			var vector = [
 				Math.random() * $multiplier - $multiplier / 2,
 				Math.random() * $multiplier - $multiplier / 2,
-				Math.random() * $multiplier - $multiplier / 2];
+				0];
 			return vector;
 		}
 		public static function newRotation($multiplier):Number {

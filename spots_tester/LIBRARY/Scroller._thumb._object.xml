@@ -1,0 +1,33 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Scroller._thumb._object" itemID="4d59a045-0000022b" lastModified="1297888395">
+  <timeline>
+    <DOMTimeline name="Scroller._thumb._object">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FF912D"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!0 -158[-20 -158 -42 -125!-42 -125|-120 30!-120 30[-124 42 -119 55!-119 55[-115 68 -106 75!-106 75[-97 83 0 83!0 83[97 83 107 75!107 75[116 68 120 56!120 56[125 42 120 30!120 30|43 -125!43 -125[20 -158 0 -158"/>
+                    <Edge cubics="!43 -125(;32,-141 16,-158 0,-158q43 -125Q20 -158q0 -158);"/>
+                    <Edge cubics="!-120 30(;-125,46 -118,66 -106,75q-120 30Q-124 42q-119 55Q-115 68q-106 75);"/>
+                    <Edge cubics="!107 75(;118,66 127,47 120,30q107 75Q116 68q120 56Q125 42q120 30);"/>
+                    <Edge cubics="!0 -158(;-16,-158 -32,-140 -42,-125q0 -158Q-20 -158q-42 -125);"/>
+                    <Edge cubics="!-42 -125(;-50,-113 -120,30 -120,30q-42 -125Q-120 30q-120 30);"/>
+                    <Edge cubics="!43 -125(;51,-113 120,30 120,30q43 -125Q120 30q120 30);"/>
+                    <Edge cubics="!107 75(;94,85 -94,85 -106,75q107 75Q97 83q0 83Q-97 83q-106 75);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

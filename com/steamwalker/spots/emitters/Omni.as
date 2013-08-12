@@ -7,8 +7,9 @@
 	import flash.geom.Point;
 	
 	//class
-	public class Omni extends MovieClip implements IEmitter {
+	public class Omni extends MovieClip {
 		private var _particles:Vector.<BasicParticle>; //holds each active particle instance
+		private var _particlePool:Vector.<BasicParticle>; //holds each inactive particle instance
 		private var _particleID:Number;
 		public var _vars:Object; //hash containing all of the user specified variables
 		//trackers
@@ -19,6 +20,7 @@
 		public function Omni(vars:Object){
 			_date = new Date();
 			_particles = new Vector.<BasicParticle>;
+			_particlePool = new Vector.<BasicParticle>;
 			_vars = vars;
 		
 			//configure basics
@@ -29,10 +31,15 @@
 		
 		//
 		//automatic
-		public function spawnParticle(){
+		public function spawnParticle():void {
 			for(var i = 0; i < _vars.rate; i++){
 				_particleID++;
-				var particle:BasicParticle = new BasicParticle(_vars, _particleID, new Date().valueOf());
+				if(_particlePool.length < 1){
+					var particle:BasicParticle = new BasicParticle(_vars, _particleID, new Date().valueOf());
+				} else {
+					var particle = _particlePool.shift();
+					particle.reset(_vars, _particleID, new Date().valueOf());
+				}
 				particle.update({vector:[
 					Math.random() * _vars.startSpeed - _vars.startSpeed / 2, 
 					Math.random() * _vars.startSpeed - _vars.startSpeed / 2, 
@@ -41,7 +48,7 @@
 				addChild(particle);
 			}
 		}
-		public function updateParticles(){
+		public function updateParticles():void {
 			var offsetY:Number = 0;
 			var offsetX:Number = 0;
 			var offsetAngle:Number = 0;
@@ -82,15 +89,16 @@
 				
 				//kill expired particle				
 				if(target.progress >= 1){
-					_particles.splice(i, 1);
+					_particlePool.push(_particles.splice(i, 1)[0]);
 					removeChild(target);
 				}
 			}
 		}
 		//
 		//get and set
-		public function get particles():Vector.<BasicParticle>{return _particles;}
-		public function get particleCount():Number{return _particles.length; }
+		public function get particles():Vector.<BasicParticle> {return _particles; }
+		public function get particleCount():Number {return _particles.length; }
+		public function get particlePoolCount():Number {return _particlePool.length; }
 		public function set airAngle(angle:Number){
 			_vars.fields.airAngle = angle;
 		}

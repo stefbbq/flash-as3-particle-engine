@@ -1,0 +1,56 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Button" itemID="4d531b0e-000001f1" linkageExportForAS="true" linkageClassName="com.steamwalker.Button" lastModified="1297885963" lastUniqueIdentifier="1">
+  <timeline>
+    <DOMTimeline name="Button">
+      <layers>
+        <DOMLayer name="hit" color="#FF4FFF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="rect" name="_hit" centerPoint3DX="-0.8" centerPoint3DY="-0.25">
+                  <matrix>
+                    <Matrix a="0.844970703125" d="1.03863525390625" tx="-44.5" ty="-18.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="51.7" y="18"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="title" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_title" name="_title" selected="true" centerPoint3DX="46" centerPoint3DY="15.35">
+                  <matrix>
+                    <Matrix tx="-0.05" ty="-0.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="46.05" y="15.4"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bg" color="#4FFF4F" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Button.bg" name="_bg" centerPoint3DX="48.6" centerPoint3DY="15.4">
+                  <transformationPoint>
+                    <Point x="48.6" y="15.4"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,35 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Indicator" itemID="5207ac1c-000001aa" lastModified="1376234582">
+  <timeline>
+    <DOMTimeline name="Indicator">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F80FF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="circle">
+                  <matrix>
+                    <Matrix tx="-12.5" ty="-12.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="12.5" y="12.5"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.1015625"/>
+                  </color>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="circle">
+                  <matrix>
+                    <Matrix a="0.199996948242188" d="0.199996948242188" tx="-2.5" ty="-2.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="12.5" y="12.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

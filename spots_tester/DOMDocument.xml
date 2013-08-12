@@ -1,0 +1,180 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#343434" width="1200" height="768" frameRate="30" currentTimeline="1" xflVersion="2.3" creatorInfo="Adobe Flash Professional CC" platform="Windows" versionInfo="Saved by Adobe Flash Windows 13.0 build 759" majorVersion="13" buildNumber="759" objectsSnapTo="false" viewAngle3D="88.6119776089248" vanishingPoint3DX="320" vanishingPoint3DY="480" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false">
+     <fonts>
+          <DOMFontItem name="calibri" itemID="4d4f23bd-000004d9" font="Calibri" size="0" id="1" sourceLastImported="1297032125" embedRanges="1|2|3|4|5"/>
+     </fonts>
+     <media>
+          <DOMBitmapItem name="logoTransparent_250.png" itemID="4d5b4b32-0000020a" sourceExternalFilepath="../creative/logoTransparent_250.png" sourceLastImported="1297828635" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="logoTransparent_250.png" bitmapDataHRef="M 1 1376234410.dat" frameRight="5000" frameBottom="2240"/>
+     </media>
+     <symbols>
+          <Include href="_title.xml" loadImmediate="false" itemID="4d5b5175-00000212" lastModified="1376103045"/>
+          <Include href="Button.xml" itemID="4d531b0e-000001f1" lastModified="1297885963"/>
+          <Include href="Button.bg.xml" loadImmediate="false" itemID="4d531b13-000001f2" lastModified="1297838666"/>
+          <Include href="circle.xml" loadImmediate="false" itemID="5207ac2f-000001ae" lastModified="1376234543"/>
+          <Include href="Indicator.xml" loadImmediate="false" itemID="5207ac1c-000001aa" lastModified="1376234582"/>
+          <Include href="logo.xml" loadImmediate="false" itemID="4d5b4b37-0000020c" lastModified="1297828663"/>
+          <Include href="rect.xml" loadImmediate="false" itemID="4d531a5d-000001ee" lastModified="1297291869"/>
+          <Include href="Scroller.xml" itemID="4d599088-00000203" lastModified="1297840439"/>
+          <Include href="Scroller._number._field.xml" loadImmediate="false" itemID="4d59995e-00000215" lastModified="1297839570"/>
+          <Include href="Scroller._rail.xml" loadImmediate="false" itemID="4d5991fc-00000206" lastModified="1297835252"/>
+          <Include href="Scroller._thumb.xml" loadImmediate="false" itemID="4d599278-0000020a" lastModified="1297888373"/>
+          <Include href="Scroller._thumb._hit.xml" loadImmediate="false" itemID="4d599f3c-00000227" lastModified="1297839465"/>
+          <Include href="Scroller._thumb._object.xml" loadImmediate="false" itemID="4d59a045-0000022b" lastModified="1297888395"/>
+          <Include href="Slider.xml" itemID="44b670ee-000000f8" lastModified="1376234553"/>
+     </symbols>
+     <timelines>
+          <DOMTimeline name="Scene 1">
+               <layers>
+                    <DOMLayer name="controls" color="#4F80FF" current="true" isSelected="true" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Button" name="stopBTN" centerPoint3DX="71.25" centerPoint3DY="37.3">
+                                             <matrix>
+                                                  <Matrix tx="44.75" ty="24.3"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="26.5" y="13"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                        <DOMDynamicText name="tFPS" fontRenderingMode="standard" left="60.45" width="94.45" height="24.4" antiAliasSharpness="-19.51171875" antiAliasThickness="95.67578125" lineType="multiline">
+                                             <matrix>
+                                                  <Matrix tx="117.35" ty="741.6"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>FPS</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" size="16" bitmapSize="320" face="Calibri" fillColor="#FFFFFF"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMDynamicText>
+                                        <DOMDynamicText name="tParticles" fontRenderingMode="standard" left="60.45" width="82.45" height="24.4">
+                                             <matrix>
+                                                  <Matrix tx="117.35" ty="22.2"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>particles</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" size="16" bitmapSize="320" face="Calibri" fillColor="#FFFFFF"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMDynamicText>
+                                        <DOMSymbolInstance libraryItemName="logo" centerPoint3DX="1075" centerPoint3DY="66">
+                                             <matrix>
+                                                  <Matrix tx="950" ty="10"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="125" y="56"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                        <DOMSymbolInstance libraryItemName="Button" name="startBTN" centerPoint3DX="153.05" centerPoint3DY="37.3">
+                                             <matrix>
+                                                  <Matrix tx="126.55" ty="24.3"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="26.5" y="13"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                        <DOMStaticText fontRenderingMode="standard" left="60.45" width="197" height="14.65" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="118.15" ty="8"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>Spots v0.1 test environment</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" bitmapSize="240" face="Calibri" fillColor="#CCCCCC"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                        <DOMDynamicText name="tParticlePool" fontRenderingMode="standard" left="60.45" width="207.15" height="24.4">
+                                             <matrix>
+                                                  <Matrix tx="117.35" ty="44.6"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>particlePool&#xD;</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" size="16" bitmapSize="320" face="Calibri" fillColor="#FFFFFF"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMDynamicText>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 2" color="#9933CC">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMShape>
+                                             <fills>
+                                                  <FillStyle index="1">
+                                                       <SolidColor alpha="0.498039215686275"/>
+                                                  </FillStyle>
+                                             </fills>
+                                             <edges>
+                                                  <Edge fillStyle1="1" edges="!3440 -520|3440 15619!3440 15619|-660 15619!-660 15619|-660 -520!-660 -520|3440 -520"/>
+                                                  <Edge cubics="!-660 -520(-660,-520;-660,-520 3440,-520 3440,-520q-660 -520 3440 -520);"/>
+                                                  <Edge cubics="!3440 -520(3440,-520;3440,-520 3440,15619 3440,15619q3440 -520 3440 15619);"/>
+                                                  <Edge cubics="!3440 15619(3440,15619;3440,15619 -660,15619 -660,15619q3440 15619 -660 15619)-660,15619;"/>
+                                                  <Edge cubics="!-660 15619(;-660,15619 -660,-520 -660,-520q-660 15619 -660 -520);"/>
+                                             </edges>
+                                        </DOMShape>
+                                        <DOMSymbolInstance libraryItemName="Indicator" name="gravObject">
+                                             <matrix>
+                                                  <Matrix tx="830.95" ty="217"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="12.5" y="12.5"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                        <DOMSymbolInstance libraryItemName="Indicator" name="emitterObject">
+                                             <matrix>
+                                                  <Matrix tx="494.95" ty="242"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="12.5" y="12.5"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timelines>
+     <persistentData>
+          <PD n="ane.tmp.unzipped.folder" v="C:\Users\stefbbq\AppData\Local\Temp\Tmp_ANE_File_Unzipped_Packages"/>
+          <PD n="com.air.sdk.path"/>
+          <PD n="com.adobe.flash.anemoi.output.type" v="ipa"/>
+     </persistentData>
+     <PrinterSettings/>
+     <publishHistory>
+          <PublishItem publishSize="240809" publishTime="1376259966"/>
+          <PublishItem publishSize="240724" publishTime="1376259959" publishDebug="true"/>
+          <PublishItem publishSize="240699" publishTime="1376259843"/>
+          <PublishItem publishSize="240720" publishTime="1376259791"/>
+          <PublishItem publishSize="240726" publishTime="1376259776"/>
+          <PublishItem publishSize="240645" publishTime="1376259776" publishDebug="true"/>
+          <PublishItem publishSize="240667" publishTime="1376259722" publishDebug="true"/>
+          <PublishItem publishSize="240644" publishTime="1376259717" publishDebug="true"/>
+          <PublishItem publishSize="240764" publishTime="1376259687"/>
+          <PublishItem publishSize="240682" publishTime="1376259685" publishDebug="true"/>
+          <PublishItem publishSize="240779" publishTime="1376259635"/>
+          <PublishItem publishSize="240663" publishTime="1376259594" publishDebug="true"/>
+          <PublishItem publishSize="240770" publishTime="1376259550"/>
+          <PublishItem publishSize="240778" publishTime="1376259543"/>
+          <PublishItem publishSize="240748" publishTime="1376259536"/>
+          <PublishItem publishSize="240774" publishTime="1376259489"/>
+          <PublishItem publishSize="240678" publishTime="1376259483" publishDebug="true"/>
+          <PublishItem publishSize="240762" publishTime="1376259440"/>
+          <PublishItem publishSize="240669" publishTime="1376259439" publishDebug="true"/>
+          <PublishItem publishSize="240753" publishTime="1376259425"/>
+     </publishHistory>
+</DOMDocument>

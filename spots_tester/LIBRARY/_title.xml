@@ -1,0 +1,29 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_title" itemID="4d5b5175-00000212" lastModified="1376103045">
+  <timeline>
+    <DOMTimeline name="_title">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="_field" fontRenderingMode="standard" width="88.15" height="26.85" isSelectable="false" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="-44.05" ty="-14.4"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>title</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" size="20" bitmapSize="400" face="calibri*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

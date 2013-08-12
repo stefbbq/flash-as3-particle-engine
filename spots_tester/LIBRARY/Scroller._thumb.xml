@@ -1,0 +1,40 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Scroller._thumb" itemID="4d599278-0000020a" lastModified="1297888373">
+  <timeline>
+    <DOMTimeline name="Scroller._thumb">
+      <layers>
+        <DOMLayer name="hit" color="#9933CC" autoNamed="false" visible="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Scroller._thumb._hit" name="_hit" centerPoint3DY="5.25">
+                  <matrix>
+                    <Matrix tx="-6.5" ty="-6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="6.5" y="11.25"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="thumb" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Scroller._thumb._object" name="_object" selected="true" centerPoint3DX="2.4" centerPoint3DY="13.15">
+                  <matrix>
+                    <Matrix ty="5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="2.4" y="8.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>
